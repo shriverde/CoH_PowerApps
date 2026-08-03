@@ -1,3 +1,265 @@
+################################################################################
+# CoH_PowerApps
+# Power Platform / Power Apps / Power Automate repository
+################################################################################
+
+# ------------------------------------------------------------------------------
+# Secrets and local configuration
+# ------------------------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.secret
+*.secrets
+*.key
+*.pem
+*.pfx
+*.p12
+*.cer
+*.crt
+
+secrets/
+.local/
+private/
+
+# Local Power Platform deployment settings may contain environment-specific IDs,
+# connection mappings, URLs, or sensitive configuration.
+deploymentSettings.local.json
+deploymentSettings.*.local.json
+settings.local.json
+config.local.json
+auth.local.json
+
+# Do not commit authentication/token caches.
+.auth/
+auth/
+tokens/
+token-cache/
+*.token
+*.access-token
+*.refresh-token
+
+# ------------------------------------------------------------------------------
+# Power Platform CLI / PAC CLI
+# ------------------------------------------------------------------------------
+
+# PAC CLI local profiles and caches
+.powerplatform/
+.pac/
+pac-auth.json
+pac-cli.log
+pac.log
+
+# Temporary solution processing directories
+.solution/
+solution-temp/
+solution-tmp/
+solution-output/
+unpack-temp/
+pack-temp/
+
+# Exported solution archives
+*.zip
+
+# Uncomment if solution ZIP packages are intentionally version controlled.
+# !releases/*.zip
+
+# Power Platform build artifacts
+bin/
+obj/
+out/
+dist/
+build/
+artifacts/
+
+# ------------------------------------------------------------------------------
+# Power Apps source files
+# ------------------------------------------------------------------------------
+
+# Temporary Power Apps Studio files
+*.msapp.tmp
+*.msapp.bak
+*.msapp.autosave
+
+# Optional binary Canvas App files.
+# Recommended: source-control unpacked Canvas App source instead.
+*.msapp
+
+# Uncomment if the repository intentionally stores .msapp binaries.
+# !apps/**/*.msapp
+
+# ------------------------------------------------------------------------------
+# Power Automate / Logic Apps temporary files
+# ------------------------------------------------------------------------------
+
+*.workflow.tmp
+*.flow.tmp
+flow-export/
+flow-exports/
+workflow-export/
+workflow-exports/
+
+# ------------------------------------------------------------------------------
+# Environment-specific deployment data
+# ------------------------------------------------------------------------------
+
+# Keep templates/examples, but ignore actual local deployment values.
+deploymentSettings.json
+deployment-settings.json
+settings.json
+
+!deploymentSettings.example.json
+!deployment-settings.example.json
+!settings.example.json
+!config.example.json
+!.env.example
+
+# Environment-specific solution exports
+exports/
+managed/
+unmanaged/
+
+# ------------------------------------------------------------------------------
+# Logs and diagnostics
+# ------------------------------------------------------------------------------
+
+*.log
+*.trace
+*.etl
+*.dmp
+*.dump
+
+logs/
+temp/
+tmp/
+.cache/
+cache/
+
+# ------------------------------------------------------------------------------
+# PowerShell
+# ------------------------------------------------------------------------------
+
+# PowerShell transcript and local output files
+PowerShell_transcript.*
+*.clixml
+
+# Module/package output
+*.nupkg
+
+# ------------------------------------------------------------------------------
+# Python
+# ------------------------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# Node.js
+# ------------------------------------------------------------------------------
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.yarn/
+.pnpm-store/
+
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+# ------------------------------------------------------------------------------
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+*.code-workspace
+
+# ------------------------------------------------------------------------------
+# Visual Studio
+# ------------------------------------------------------------------------------
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ------------------------------------------------------------------------------
+# JetBrains
+# ------------------------------------------------------------------------------
+
+.idea/
+*.iml
+
+# ------------------------------------------------------------------------------
+# Windows
+# ------------------------------------------------------------------------------
+
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ------------------------------------------------------------------------------
+# macOS
+# ------------------------------------------------------------------------------
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ------------------------------------------------------------------------------
+# Linux
+# ------------------------------------------------------------------------------
+
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ------------------------------------------------------------------------------
+# Office temporary files
+# ------------------------------------------------------------------------------
+
+~$*.docx
+~$*.xlsx
+~$*.pptx
+~$*.csv
+
+# ------------------------------------------------------------------------------
+# Backups
+# ------------------------------------------------------------------------------
+
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+*~
+
+backup/
+backups/
+
 ## Ignore Visual Studio temporary files, build results, and
 ## files generated by popular Visual Studio add-ons.
 ##
